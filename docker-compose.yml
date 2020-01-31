@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: .
+    volumes:
+      - .:/go/src/github.com/kkeisuke/docker-go-gin
+    ports:
+      - 3001:3001
+    tty:
+      true
